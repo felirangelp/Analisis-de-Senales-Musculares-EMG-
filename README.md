@@ -5,6 +5,12 @@
 
 Sistema completo de procesamiento y análisis de señales electromiográficas (EMG) de superficie para la clasificación de movimientos mediante análisis de conectividad funcional.
 
+## 🌐 Dashboard en Vivo
+
+**👉 [Ver Dashboard Interactivo](https://felirangelp.github.io/Analisis-de-Senales-Musculares-EMG-/)**
+
+> **Nota**: El dashboard requiere datos procesados. Para ver el dashboard completo con datos, sigue las instrucciones de instalación local más abajo.
+
 ## 📋 Descripción
 
 Este proyecto implementa un pipeline completo de procesamiento de señales EMG que incluye:
@@ -118,6 +124,7 @@ El navegador se abrirá automáticamente. Si no, abre manualmente la URL.
 .
 ├── process_emg.py          # Script principal de procesamiento
 ├── dashboard_v2.html       # Dashboard interactivo con pestañas
+├── index.html              # Dashboard para GitHub Pages
 ├── server.py              # Servidor HTTP para el dashboard
 ├── requirements.txt       # Dependencias Python
 ├── .gitignore            # Archivos excluidos del repositorio
@@ -227,4 +234,3 @@ Para preguntas o sugerencias, puedes abrir un issue en el repositorio.
 ---
 
 ⭐ Si este proyecto te resultó útil, considera darle una estrella en GitHub!
-
