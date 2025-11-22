@@ -12,7 +12,7 @@ __pycache__/
 
 # Datos y resultados
 *.mat
-data.json
+# data.json - Incluido para GitHub Pages
 results.json
 *.csv
 *.pkl

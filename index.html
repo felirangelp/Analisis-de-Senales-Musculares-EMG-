@@ -574,23 +574,12 @@
                 console.error('Error cargando datos:', error);
                 document.getElementById('loading').innerHTML = `
                     <div style="background: white; padding: 40px; border-radius: 10px; max-width: 600px; margin: 0 auto;">
-                        <h2 style="color: #667eea; margin-bottom: 20px;">⚠️ Datos no disponibles</h2>
+                        <h2 style="color: #667eea; margin-bottom: 20px;">⚠️ Error cargando datos</h2>
                         <p style="margin-bottom: 20px; color: #666;">
-                            Para visualizar el dashboard, primero necesitas ejecutar el procesamiento de datos.
+                            No se pudo cargar el archivo data.json. Por favor, recarga la página.
                         </p>
-                        <div style="background: #f8f9fa; padding: 20px; border-radius: 5px; margin: 20px 0;">
-                            <h3 style="color: #667eea; margin-bottom: 15px;">📋 Instrucciones:</h3>
-                            <ol style="text-align: left; color: #666; line-height: 2;">
-                                <li>Clona este repositorio en tu computadora</li>
-                                <li>Instala las dependencias: <code>pip install -r requirements.txt</code></li>
-                                <li>Coloca tu archivo de datos EMG (.mat) en el directorio</li>
-                                <li>Ejecuta: <code>python3 process_emg.py</code></li>
-                                <li>Inicia el servidor: <code>python3 server.py</code></li>
-                                <li>Abre <code>http://localhost:8013/dashboard_v2.html</code></li>
-                            </ol>
-                        </div>
-                        <p style="color: #666; margin-top: 20px;">
-                            Para más información, consulta el <a href="https://github.com/felirangelp/Analisis-de-Senales-Musculares-EMG-#readme" style="color: #667eea;">README</a> del proyecto.
+                        <p style="color: #666;">
+                            Si el problema persiste, consulta el <a href="https://github.com/felirangelp/Analisis-de-Senales-Musculares-EMG-#readme" style="color: #667eea;">README</a> del proyecto.
                         </p>
                     </div>
                 `;
