@@ -1,0 +1,38 @@
+# Ambiente virtual
+venv/
+env/
+ENV/
+
+# Archivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Datos y resultados
+*.mat
+data.json
+results.json
+*.csv
+*.pkl
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Distribución
+dist/
+build/
+*.egg-info/
+
