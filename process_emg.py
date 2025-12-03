@@ -9,6 +9,7 @@ from scipy import signal
 from scipy.stats import pearsonr
 import json
 import os
+import time
 
 def load_emg_data(filepath):
     """Carga los datos EMG desde archivo .mat"""
@@ -222,11 +223,18 @@ def main():
     )
     
     # Entrenar clasificador SVM con kernel RBF
+    print(f"Entrenando SVM con {len(X_train)} muestras de entrenamiento...")
+    start_time = time.time()
     clf = SVC(kernel='rbf', random_state=42)
     clf.fit(X_train, y_train)
+    training_time = time.time() - start_time
+    print(f"Tiempo de entrenamiento: {training_time:.4f} segundos")
     
     # Predecir
+    start_time = time.time()
     y_pred = clf.predict(X_test)
+    prediction_time = time.time() - start_time
+    print(f"Tiempo de predicción: {prediction_time:.4f} segundos")
     
     # Métricas
     accuracy = accuracy_score(y_test, y_pred)
